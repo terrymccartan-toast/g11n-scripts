@@ -9,3 +9,9 @@ Use the Python Interactive Command Line to download and upload files. Activate t
 - Search String: A strings that can be found in the guide name for the guides you would like to download, for example "pNPS_Q3_2024"
 - Save Folder: A location on your computer where the downloaded xliff files shoudl be saved
 - api_key: an access token for the pendo account you are searching. Note that there are multiple Pendo Accounts/API keys and the script must be run for each one separately.
+
+# Uploading Files
+Once XLIFF files are translated, you can use the upload_xliffs funciton to upload them from a directory.
+
+    from pendo import upload_xliffs
+    upload_xliffs(<save_folder>, <api_key>)
